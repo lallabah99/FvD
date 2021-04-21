@@ -2,9 +2,9 @@
 
 /* FONTS */
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'nickelodeonfont';
+	src: url('../fonts/nickelodeon_font_2.0_por_disney_channel_nick_city-webfont.woff') format('woff2'),
+			 url('../fonts/nickelodeon_font_2.0_por_disney_channel_nick_city-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -17,11 +17,51 @@
 }
 
 body {
-  font-family:eenfont, sans-serif;
   color:#111;
   background-color:#eee;
+  font-family: "nickelodeonfont" ;
+
+  /* light theme */  
+  --backgroundColor: #F96811;
+  background-color: var(--backgroundColor);
 }
 
 
 /* BRAND STYLING */
+section{
+	padding-top: 20vw;
+	position: relative;
+    display: flex;
+    overflow: hidden;
+}
 
+h1 {
+	color: white;
+	opacity: 0;
+	font-size: max(4.5vw, 35px);
+	z-index: 10;
+}
+
+h1 span{
+	text-shadow: 0 16px 25px rgba(0,0,0,0.5);
+
+	
+}
+
+@keyframes nickelodeon-animation {
+	0% {
+		transform:translatex(0) translateY(0) rotate(0);
+	}
+
+	100% {
+		transform:translatex(500px) translateY(0)  rotate(2turn);
+	}
+  }
+  
+  
+  section:hover h1 {
+	opacity: 1;
+	animation-name:nickelodeon-animation, letter-animation;
+	animation-duration:2.5s;
+	animation-fill-mode:forwards;
+  }
