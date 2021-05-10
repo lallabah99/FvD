@@ -16,52 +16,387 @@
   box-sizing:border-box;  
 }
 
-body {
-  color:#111;
-  background-color:#eee;
-  font-family: "nickelodeonfont" ;
-
-  /* light theme */  
-  --backgroundColor: #F96811;
-  background-color: var(--backgroundColor);
+:root{
+	--backgroundColor: #F96811;
+	--fontColor: white;
+	--textShadow: 0 0.16em 0.1em rgba(0,0,0,0.5)
 }
 
+
+@media (prefers-color-scheme: dark){
+	:root{
+		--backgroundColor: #1A1A1A;
+		--fontColor: #F96811;
+		--textShadow: 0 0.16em 0.2em rgba(0,0,0,0.5)
+	}
+}
+
+body {
+  font-family: "nickelodeonfont" ;
+  background-color: var(--backgroundColor);
+}
 
 /* BRAND STYLING */
 section{
 	padding-top: 20vw;
-	position: relative;
-    display: flex;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 h1 {
-	color: white;
-	opacity: 0;
+	color: var(--fontColor);
 	font-size: max(4.5vw, 35px);
-	z-index: 10;
 }
 
 h1 span{
-	text-shadow: 0 16px 25px rgba(0,0,0,0.5);
-
+	text-shadow: var(--textShadow);
+	display: inline-block;
 	
 }
 
-@keyframes nickelodeon-animation {
+@keyframes rollen-animation {
 	0% {
 		transform:translatex(0) translateY(0) rotate(0);
+		opacity: 0;
 	}
 
-	100% {
-		transform:translatex(500px) translateY(0)  rotate(2turn);
+	18% {
+		transform:translatex(4em) translateY(0) rotate(1turn);
 	}
+
+	30%, 40% {
+		transform:translatex(5em) translateY(0) rotate(1turn);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+
+
+  }
+
+  @keyframes springen-animation {
+	0% {
+		transform:translatey(0);;
+		opacity: 0;
+	}
+
+
+	5% {
+		transform:translatey(-3em) translatex(1em);
+	}
+
+	7% {
+		transform:translatey(0em) translatex(2em);
+	}
+
+	10% {
+		transform:translatey(-3em) translatex(3em);
+	}
+
+	15% {
+		transform:translatey(0) translatex(4em);
+	}
+
+	20% {
+		transform:translatey(-2) translatex(4em);
+	}
+
+	30%, 40% { 
+		transform:translatey(0) translatex(5em);
+		opacity: 1;
+
+	}
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+
+	
+
+
   }
   
-  
+  @keyframes salto-animation {
+	0% {
+		transform:translatex(0) translateY(0) rotate(0);
+		opacity: 0;
+	}
+
+	10% {
+		transform:translatex(4em) translateY(-1em) rotate(1turn);
+	}
+
+	20% {
+		transform:translatex(4em) translateY(-0.5em) rotate(1turn);
+	}
+
+	30%, 40% {
+		transform:translatex(5em) translateY(0) rotate(1turn);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+
+
+  }
+
+
+  @keyframes vormen-animation {
+	0% {
+		transform:translatex(0) translateY(0) scaley(1);
+		opacity: 0;
+	}
+
+	10% {
+		transform:translatex(1em) translateY(0) scaley(2);
+	}
+
+	20% {
+		transform:translatex(4em) translateY(0) scaley(2);
+	}
+
+	30%, 40% { transform:translatex(5em);
+		opacity: 1;
+
+	}
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+  }
+
+  @keyframes aanloop-animation {
+	0% {
+	  transform:none;
+	  opacity: 0;
+	}
+	2% {
+	  transform:scale(1.2, .8); 
+	}
+	3% {
+	  transform:scale(.9, 1.1); 
+	}
+	5% {
+	  transform:scale(1.35, .65);
+	  animation-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	}
+	8% {
+	  transform:translatey(-3em)  scale(.67, 1.5); 
+	  animation-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220);
+	}
+	10% {
+	  transform:scale(2, .25) translatex(3em); 
+	}
+	12% {
+	  transform:scale(.8, 1.2) translatex(3.2em); 
+	}
+	15% {
+	  transform:scale(1.1, .9) translatex(3.4em); 
+	}
+	18% {
+	  transform:scale(.95, 1.05) translatex(3.6em); 
+	}
+	20% {
+	  transform:scale(1.02, .98) translatex(4em); 
+	}
+	30%, 40%  {
+	  transform:translatex(5em);
+	  opacity: 1;
+	}
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+  }
+
+
+
+  @keyframes wijder-animation {
+	0% {
+		transform:translatex(0) scaleX(1) rotate(0);
+		opacity: 0;
+	}
+
+	10% {
+		transform:translatex(3em)  scaleX(3) rotate(2turn);
+	}
+
+	20% {
+		transform:translatex(4em) scaleX(2) rotate(1turn);
+	}
+
+	30%, 40% { transform:translatex(5em);
+		opacity: 1;
+
+	}
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+  }
+
+  @keyframes hobbelig-animation {
+	/* jouw code hier */
+	0% {
+	  transform:translatey(0);
+	  opacity:0;
+	}
+	2% {
+	  transform:translatey(-1em);
+	}
+	5% {
+	  transform:translatey(1em);
+	}
+	10% {
+	  transform:translatey(-3em) translatex(1em);
+	}
+	15% {
+	  transform:translatey(1em) translatex(2em);
+	}
+	20% {
+      transform:translatey(-2em) translatex(3em);
+	}	
+	25% {
+		transform:translatey(0) translatex(4em);
+	  }
+	
+	30%, 40% { 
+	  transform:translatex(5em);
+	  opacity: 1;}
+	
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+  }
+
+  @keyframes vervormen-animation {
+	0% {
+		transform:translatex(0) ;
+		opacity: 0;
+	}
+
+	10% {
+		transform:translatex(3em) scalex(1.5) scaley(-2) ;
+		
+	}
+
+	20% {
+		transform:translatex(3em) scalex(2) scaley(-1.5) ;
+	}
+
+	30%, 40% { transform:translatex(5em) scalex(1) scaley(1);
+		opacity: 1;
+
+	}
+
+	100%{
+		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+	}
+
+
+
+  }
+
+  @keyframes nickelodeon-animation {
+	30% {
+		transform: translateY(0) rotatey(0) translateX(0);
+	}
+
+	60% {
+		transform: translateY(0) rotatey(1turn) translateX(0);
+		opacity: 1;
+	}
+
+	100%{
+		transform: translateY(0) rotatey(1turn) translateX(20em);
+		opacity:0;
+	}
+
+	
+
+  }
+
+  section h1{
+	transform-origin:center;
+	opacity: 0;
+  }
   section:hover h1 {
 	opacity: 1;
-	animation-name:nickelodeon-animation, letter-animation;
-	animation-duration:2.5s;
+	animation-name:nickelodeon-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+  
+  section:hover h1 span:nth-of-type(1) {
+	opacity: 1;
+	animation-name:rollen-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(2) {
+	opacity: 1;
+	animation-name:springen-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(3) {
+	opacity: 1;
+	animation-name:salto-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(4) {
+	opacity: 1;
+	animation-name:vormen-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(5) {
+	opacity: 1;
+	animation-name:aanloop-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(6) {
+	opacity: 1;
+	animation-name:wijder-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(7) {
+	opacity: 1;
+	animation-name:hobbelig-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(8) {
+	opacity: 1;
+	animation-name:vervormen-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(9) {
+	opacity: 1;
+	animation-name:rollen-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(10) {
+	opacity: 1;
+	animation-name:vormen-animation;
+	animation-duration:10s;
+	animation-fill-mode:forwards;
+  }
+
+  section:hover h1 span:nth-of-type(11) {
+	opacity: 1;
+	animation-name:rollen-animation;
+	animation-duration:10s;
 	animation-fill-mode:forwards;
   }
