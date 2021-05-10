@@ -15,18 +15,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 
-## Je 'posts' (je code-dagboek)
-
-Je procesverslag is een soort dagboek.
-Bij elk voortgangsgesprek en het eindgesprek voeg je een ‘post’ aan je dagboek toe.
-
-In zo’n ‘post’ neem je op:
-- Wat je van plan was
-- Je werk zo ver
-- Wat er goed ging
-- Wat er lastig is
-- Wat je plannen zijn
-
 ## Week 1
 
 Afgelopen week ben ik aan de slag gegaan met de oefeningen. Dit ging goed bij de eerste animaties en de custom properties. Daarna was het voor mij best lastig om de sommetjes te maken. Meestal lukte de eerste vier wel en daarna ging het bergafwaarts. 
@@ -51,3 +39,29 @@ Mijn plan is, als dat probleem verholpen is, om de letters per letter naar het m
 ### Eerste voortgangsgesprek
 - Hoe kan ik meerdere dingen animeren?
 - Waarom lukt het mij niet om per letter (span) te animeren?
+
+scalex en scaley om langer te maken
+
+0 en 10% en 10 - 90 helemaal niks en daarna weg
+en de animatie duurt 10s
+
+## Week 3
+
+Deze week is het, met behulp van de tips tijdens het voortgangsgesprek, mij gelukt om alle letters van Nickelodeon op zijn eigen manier te laten bewegen. Dit ziet er erg speels en grappig uit. Waar ik nu nog moeite mee heb is om ze dan weer gezamelijk te laten bewegen. Helaas kan ik deze week niet bij het voortgangsgesprek zijn. Wel kan ik in het kanaal en aan klasgenoten vragen hoe dit nog kan.
+
+Ik merk dat ik het moeilijk vind om door te gaan naar de volgende stap als de eerste nog niet helemaal af is. Dat komt omdat ik te lang blijf hangen in kleine stapjes. Als het te lang niet lukt vind ik het lastig om nog motivatie te vinden. Gelukkig heb ik ook veel gehad aan google en youtube.
+
+## Meivakantie
+
+## Week 5
+
+Ik heb me in de meivakantie voorbereid op de eindpresentatie. Ik was erg lang bezig met het nickelodeon logo en ben eignelijk te laat begonnen met het gucci logo. Daarom heb ik me bij GUCCI niet helemaal aan het script gehouden wat ik bedacht. Wel vind ik dat beide animaties goed passen bij het merk.
+
+Hoewel er een aantal dingen zijn die ik liever anders had gedaan, ben ik tevreden met mijn werk. Hij werkt voor dark en light mode en heeft een vloeiende overgang. Eerst was dit niet zo. Je zag eerst precies waar welk percentage zat en de animatie verliep nogal houterig. Dat is nu vrijwel verholpen.
+
+Al met al zijn de afgelopen weken erg leerzaam geweest en ben ik weer een stapje verder met frontend voor designers. Het is niet geheel vlekkeloos gegaan maar ik vind het fijn om vooruitgang te zien. 
+
+Wat ik anders had willen doen maar geen tijd voor heb gehad:
+- vw gebruiken ipv em bij de afstand links van nickelodeon, zodat het beter responsive werkt
+- nog een vorm toevoegen aan het Gucci logo
+- dark en light mode laten werken via een toggle button

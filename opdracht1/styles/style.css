@@ -7,6 +7,14 @@
 			 url('../fonts/nickelodeon_font_2.0_por_disney_channel_nick_city-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+    font-family: 'granjonroman';
+    src: url('../fonts/granjon-webfont.woff2') format('woff2'),
+         url('../fonts/granjon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
@@ -17,38 +25,67 @@
 }
 
 :root{
-	--backgroundColor: #F96811;
-	--fontColor: white;
-	--textShadow: 0 0.16em 0.1em rgba(0,0,0,0.5)
+	--backgroundColorN: #F96811;
+	--fontColorN: white;
+	--textShadowN: 0 0.16em 0.1em rgba(0,0,0,0.5);
+
+	--backgroundColorG1:rgb(184, 184, 184);
+	--backgroundColorG2:rgb(83, 83, 83);
+	--fontColorG1: white;
+	--fontColorG2:black;
+	
 }
 
 
 @media (prefers-color-scheme: dark){
 	:root{
-		--backgroundColor: #1A1A1A;
-		--fontColor: #F96811;
-		--textShadow: 0 0.16em 0.2em rgba(0,0,0,0.5)
+		--backgroundColorN: #1A1A1A;
+		--fontColorN: #F96811;
+		--textShadowN: 0 0.16em 0.1em rgba(0,0,0,0.5);
+
+		--backgroundColorG1:rgb(36, 36, 36);
+		--backgroundColorG2:rgb(0, 0, 0);
+		--fontColorG1: rgb(0, 0, 0);
+		--fontColorG2:rgb(255, 255, 255);
+		
 	}
 }
 
-body {
+body section:nth-of-type(1){
   font-family: "nickelodeonfont" ;
-  background-color: var(--backgroundColor);
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background-color: var(--backgroundColorN);
 }
+
+body section:nth-of-type(2){
+	font-family: "granjonroman" ;
+	padding-top: 6vw;
+	padding-bottom: 9vw;
+	background-color: var(--backgroundColorG1);
+	text-align: center;
+  }
 
 /* BRAND STYLING */
-section{
-	padding-top: 20vw;
-	overflow: hidden;
-}
 
 h1 {
-	color: var(--fontColor);
+	color: var(--fontColorN);
 	font-size: max(4.5vw, 35px);
 }
 
 h1 span{
-	text-shadow: var(--textShadow);
+	text-shadow: var(--textShadowN);
+	display: inline-block;
+	
+}
+
+h2{
+	color: var(--fontColorG1);
+	font-size: max(4.5vw, 35px);
+}
+
+h2 span{
+	text-shadow: var(--textShadowN);
 	display: inline-block;
 	
 }
@@ -177,11 +214,9 @@ h1 span{
 	}
 	5% {
 	  transform:scale(1.35, .65);
-	  animation-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
 	}
 	8% {
 	  transform:translatey(-3em)  scale(.67, 1.5); 
-	  animation-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220);
 	}
 	10% {
 	  transform:scale(2, .25) translatex(3em); 
@@ -302,10 +337,18 @@ h1 span{
 	60% {
 		transform: translateY(0) rotatey(1turn) translateX(0);
 		opacity: 1;
+		font-style: normal;
+	}
+
+	70%{
+		transform: translateY(0) rotatey(1turn) translateX(0);
+		opacity: 1;
+
+		
 	}
 
 	100%{
-		transform: translateY(0) rotatey(1turn) translateX(20em);
+		transform: translateY(-3em) rotatey(1turn) translateX(20em);
 		opacity:0;
 	}
 
@@ -316,12 +359,14 @@ h1 span{
   section h1{
 	transform-origin:center;
 	opacity: 0;
+
   }
   section:hover h1 {
 	opacity: 1;
 	animation-name:nickelodeon-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
   
   section:hover h1 span:nth-of-type(1) {
@@ -329,6 +374,7 @@ h1 span{
 	animation-name:rollen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(2) {
@@ -336,6 +382,7 @@ h1 span{
 	animation-name:springen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(3) {
@@ -343,6 +390,7 @@ h1 span{
 	animation-name:salto-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(4) {
@@ -350,6 +398,7 @@ h1 span{
 	animation-name:vormen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(5) {
@@ -357,6 +406,7 @@ h1 span{
 	animation-name:aanloop-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(6) {
@@ -364,6 +414,7 @@ h1 span{
 	animation-name:wijder-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(7) {
@@ -371,6 +422,7 @@ h1 span{
 	animation-name:hobbelig-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(8) {
@@ -378,6 +430,7 @@ h1 span{
 	animation-name:vervormen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(9) {
@@ -385,6 +438,7 @@ h1 span{
 	animation-name:rollen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(10) {
@@ -392,6 +446,7 @@ h1 span{
 	animation-name:vormen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
 
   section:hover h1 span:nth-of-type(11) {
@@ -399,4 +454,208 @@ h1 span{
 	animation-name:rollen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-timing-function: linear;
   }
+
+
+
+  @keyframes kleinesprong1-animation {
+	0%{
+		transform: scale(0)
+	}
+
+	10%{
+		transform: scale(1.2);
+	}
+
+	20%{
+		transform: scale(1);
+	}
+
+	72%{
+		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
+		transform: scale(1.2);
+	}
+
+	100%{
+		box-shadow:0;
+		transform: scale(1);
+	}
+
+  }
+
+  @keyframes kleinesprong2-animation {
+	0%{
+		transform: scale(0)
+	}
+
+	20%{
+		transform: scale(1.2);
+	}
+
+	25%{
+		transform: scale(1);
+	}
+
+	74%{
+		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
+		transform: scale(1.2);
+	}
+
+	100%{
+		box-shadow:0;
+		transform: scale(1);
+	}
+
+  }
+
+  @keyframes kleinesprong3-animation {
+	0%{
+		transform: scale(0)
+	}
+
+	22%{
+		transform: scale(1.2);
+	}
+
+	27%{
+		transform: scale(1);
+	}
+
+	76%{
+		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
+		transform: scale(1.2);
+	}
+
+	100%{
+		box-shadow:0;
+		transform: scale(1);
+	}
+
+  }
+
+  @keyframes kleinesprong4-animation {
+	0%{
+		transform: scale(0)
+	}
+
+	25%{
+		transform: scale(1.2);
+	}
+
+	30%{
+		transform: scale(1);
+	}
+
+	78%{
+		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
+		transform: scale(1.2);
+	}
+
+	100%{
+		box-shadow:0;
+		transform: scale(1);
+	}
+
+  }
+
+  @keyframes kleinesprong5-animation {
+	0%{
+		transform: scale(0)
+	}
+
+	27%{
+		transform: scale(1.2);
+	}
+
+	31%{
+		transform: scale(1);
+	}
+
+	80%{
+		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
+		transform: scale(1.2);
+	}
+
+	100%{
+		box-shadow:0;
+		transform: scale(1);
+	}
+
+  }
+
+  @keyframes verkleuren-animation{
+	  31%{
+		  color: var(--fontColorG1)
+	  }
+
+	  50%, 100%{
+		  color:var(--fontColorG2);
+	  }
+
+  }
+
+  @keyframes achtergrond-animation{
+	31%{
+		background-color:var(--backgroundColorG1);
+	}
+
+	50%, 100%{
+		background-color:var(--backgroundColorG2);
+	}
+
+	
+  }
+
+  body:hover section:nth-of-type(2){
+	animation-name: achtergrond-animation;
+	animation-duration:5s;
+	transition:ease-in-out;
+	animation-timing-function: linear;
+
+  }
+
+
+
+
+  section:hover h2{
+	animation-name:verkleuren-animation;
+	animation-duration:5s;
+	transition:ease-in-out;
+	animation-timing-function: linear;
+  }
+
+  section:hover h2 span:nth-of-type(1){
+	  animation-name:kleinesprong1-animation;
+	  animation-duration:5s;
+	  transition:ease-in-out;
+	  animation-timing-function: linear;
+  }
+
+  section:hover h2 span:nth-of-type(2){
+	animation-name:kleinesprong2-animation;
+	animation-duration:5s;
+	transition:ease-in-out;
+	animation-timing-function: linear;
+}
+
+section:hover h2 span:nth-of-type(3){
+	animation-name:kleinesprong3-animation;
+	animation-duration:5s;
+	transition:ease-in-out;
+	animation-timing-function: linear;
+}
+
+section:hover h2 span:nth-of-type(4){
+	animation-name:kleinesprong4-animation;
+	animation-duration:5s;
+	transition:ease-in-out;
+	animation-timing-function: linear;
+}
+
+section:hover h2 span:nth-of-type(5){
+	animation-name:kleinesprong5-animation;
+	animation-duration:5s;
+	transition:ease-in-out;
+	animation-timing-function: linear;
+}
