@@ -15,7 +15,6 @@
          url('../fonts/granjon-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -33,7 +32,6 @@
 	--backgroundColorG2:rgb(83, 83, 83);
 	--fontColorG1: white;
 	--fontColorG2:black;
-	
 }
 
 
@@ -90,6 +88,7 @@ h2 span{
 	
 }
 
+/* Animaties Nickelodeon */
 @keyframes rollen-animation {
 	0% {
 		transform:translatex(0) translateY(0) rotate(0);
@@ -100,12 +99,12 @@ h2 span{
 		transform:translatex(4em) translateY(0) rotate(1turn);
 	}
 
-	30%, 40% {
+	30% {
 		transform:translatex(5em) translateY(0) rotate(1turn);
 		opacity: 1;
 	}
 	100%{
-		transform: translateY(0) scale(1) rotatey(0) translateX(5em);
+		transform: translateY(0) scale(1) rotate(1turn) rotatey(0) translateX(5em);
 	}
 
 
@@ -138,7 +137,7 @@ h2 span{
 		transform:translatey(-2) translatex(4em);
 	}
 
-	30%, 40% { 
+	30%{ 
 		transform:translatey(0) translatex(5em);
 		opacity: 1;
 
@@ -166,7 +165,7 @@ h2 span{
 		transform:translatex(4em) translateY(-0.5em) rotate(1turn);
 	}
 
-	30%, 40% {
+	30% {
 		transform:translatex(5em) translateY(0) rotate(1turn);
 		opacity: 1;
 	}
@@ -192,7 +191,7 @@ h2 span{
 		transform:translatex(4em) translateY(0) scaley(2);
 	}
 
-	30%, 40% { transform:translatex(5em);
+	30% { transform:translatex(5em);
 		opacity: 1;
 
 	}
@@ -233,7 +232,7 @@ h2 span{
 	20% {
 	  transform:scale(1.02, .98) translatex(4em); 
 	}
-	30%, 40%  {
+	30% {
 	  transform:translatex(5em);
 	  opacity: 1;
 	}
@@ -258,7 +257,7 @@ h2 span{
 		transform:translatex(4em) scaleX(2) rotate(1turn);
 	}
 
-	30%, 40% { transform:translatex(5em);
+	30%{ transform:translatex(5em);
 		opacity: 1;
 
 	}
@@ -268,7 +267,6 @@ h2 span{
   }
 
   @keyframes hobbelig-animation {
-	/* jouw code hier */
 	0% {
 	  transform:translatey(0);
 	  opacity:0;
@@ -292,7 +290,7 @@ h2 span{
 		transform:translatey(0) translatex(4em);
 	  }
 	
-	30%, 40% { 
+	30% { 
 	  transform:translatex(5em);
 	  opacity: 1;}
 	
@@ -316,7 +314,7 @@ h2 span{
 		transform:translatex(3em) scalex(2) scaley(-1.5) ;
 	}
 
-	30%, 40% { transform:translatex(5em) scalex(1) scaley(1);
+	30%{ transform:translatex(5em) scalex(1) scaley(1);
 		opacity: 1;
 
 	}
@@ -370,7 +368,6 @@ h2 span{
   }
   
   section:hover h1 span:nth-of-type(1) {
-	opacity: 1;
 	animation-name:rollen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -378,7 +375,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(2) {
-	opacity: 1;
 	animation-name:springen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -386,7 +382,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(3) {
-	opacity: 1;
 	animation-name:salto-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -394,7 +389,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(4) {
-	opacity: 1;
 	animation-name:vormen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -402,7 +396,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(5) {
-	opacity: 1;
 	animation-name:aanloop-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -410,7 +403,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(6) {
-	opacity: 1;
 	animation-name:wijder-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -418,7 +410,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(7) {
-	opacity: 1;
 	animation-name:hobbelig-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -426,7 +417,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(8) {
-	opacity: 1;
 	animation-name:vervormen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -434,7 +424,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(9) {
-	opacity: 1;
 	animation-name:rollen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -442,7 +431,6 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(10) {
-	opacity: 1;
 	animation-name:vormen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
@@ -450,14 +438,13 @@ h2 span{
   }
 
   section:hover h1 span:nth-of-type(11) {
-	opacity: 1;
 	animation-name:rollen-animation;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
 	animation-timing-function: linear;
   }
 
-
+/* Animaties GUCCI */
 
   @keyframes kleinesprong1-animation {
 	0%{
@@ -474,7 +461,7 @@ h2 span{
 
 	72%{
 		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
-		transform: scale(1.2);
+		transform: scale(1.3);
 	}
 
 	100%{
@@ -499,7 +486,7 @@ h2 span{
 
 	74%{
 		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
-		transform: scale(1.2);
+		transform: scale(1.3);
 	}
 
 	100%{
@@ -524,7 +511,7 @@ h2 span{
 
 	76%{
 		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
-		transform: scale(1.2);
+		transform: scale(1.3);
 	}
 
 	100%{
@@ -549,7 +536,7 @@ h2 span{
 
 	78%{
 		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
-		transform: scale(1.2);
+		transform: scale(1.3);
 	}
 
 	100%{
@@ -574,7 +561,7 @@ h2 span{
 
 	80%{
 		text-shadow:1px 1px 10px rgb(255, 246, 161), 1px 1px 10px rgb(224, 178, 49);
-		transform: scale(1.2);
+		transform: scale(1.3);
 	}
 
 	100%{
@@ -614,8 +601,6 @@ h2 span{
 	animation-timing-function: linear;
 
   }
-
-
 
 
   section:hover h2{
