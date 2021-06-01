@@ -65,3 +65,11 @@ Wat ik anders had willen doen maar geen tijd voor heb gehad:
 - vw gebruiken ipv em bij de afstand links van nickelodeon, zodat het beter responsive werkt
 - nog een vorm toevoegen aan het Gucci logo
 - dark en light mode laten werken via een toggle button
+
+## Presentatie
+
+De presentatie verliep goed, ik koos er voor om als eerste te gaan zodat ik tips kon krijgen en daarna goed kon focussen op de anderen. Ik heb een aantal tips gehad die erg handig zijn om toe te passen op mijn code:
+
+1. Als je de opacity op 0 zet kan het logo niet gelezen worden door screenreaders en als het klikbaar is, kunnen mensen er per ongeluk op klikken. Ipv opacity:0; kan ik beter color:transparent; gebruiken of scale:0;.
+2. Het is goed dat ik nth-of-type(2) heb gebruikt, maar het zou handig zijn als ik met commentaar erbij zou zetten over welke letter het gaat zodat ik niet in de war raak.
+3. Bij GUCCI is het eignelijk onnodig dat ik per letter een eigen animatie heb gemaakt waarbij de percentages later scalen. In plaats daarvan had ik gewoon een animation-delay:1s; kunnen gebruiken. 
