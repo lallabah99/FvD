@@ -9,9 +9,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+2. https://www.youtube.com/watch?v=fYq5PXgSsbE
+3. https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
+4. http://jsfiddle.net/binaryben/aLx3m4k5/
 
 
 
@@ -73,3 +74,9 @@ De presentatie verliep goed, ik koos er voor om als eerste te gaan zodat ik tips
 1. Als je de opacity op 0 zet kan het logo niet gelezen worden door screenreaders en als het klikbaar is, kunnen mensen er per ongeluk op klikken. Ipv opacity:0; kan ik beter color:transparent; gebruiken of scale:0;.
 2. Het is goed dat ik nth-of-type(2) heb gebruikt, maar het zou handig zijn als ik met commentaar erbij zou zetten over welke letter het gaat zodat ik niet in de war raak.
 3. Bij GUCCI is het eignelijk onnodig dat ik per letter een eigen animatie heb gemaakt waarbij de percentages later scalen. In plaats daarvan had ik gewoon een animation-delay:1s; kunnen gebruiken. 
+
+
+## Vragen
+- Hoe zorg je dat je content onder de fixed header valt
+- Hoe kan het dat ik alleen de eerste film selecteer en waarom werkt queryselectorall niet?
+- Hoe kan ik iets toevoegen aan favorieten
