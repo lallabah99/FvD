@@ -35,12 +35,10 @@ Ik ben begonnen met het eerste logo: Nickelodeon. Het lukt me om de letters vanu
 Mijn plan is, als dat probleem verholpen is, om de letters per letter naar het midden te animeren. 
 
 ### Nickelodeon Logo
-![Nickelodeon](/images/Logo's_FvD_Lalla-01.png "Nickelodeon logo")
-
-<img src="images/Logo's_FvD_Lalla-01.png">
+![Nickelodeon](opdracht1/images/Logo's_FvD_Lalla-01.png "Nickelodeon logo")
 
 ### Gucci Logo
-![Gucci](/images/Logo's_FvD_Lalla-02.png "Nickelodeon logo")
+![Gucci](opdracht1/images/Logo's_FvD_Lalla-02.png "Nickelodeon logo")
 
 ### Eerste voortgangsgesprek
 - Hoe kan ik meerdere dingen animeren?
@@ -87,7 +85,7 @@ Bij deze opdracht vond ik de oefeningen van te voren al erg lastig. Daarom had i
 Uiteindelijk heb ik ervoor gekozen om de films te kiezen die je kunt filteren. Ik bedacht dat het er zo uit zou moeten zien:
 
 
-![Opdracht 2](/images/opdracht2_FvD-01.png "opdracht 2")
+![Opdracht 2](opdracht2/images/opdracht2_FvD-01.png "opdracht 2")
 
 Ik was hier wat later mee en kreeg als feedback dat het meer microinteracties kon bevatten en wat uitgebreider mocht. Tijdens het werken aan deze opdracht heb ik daarom wat dingen bedacht die het interessanter zouden maken.
 
@@ -103,15 +101,15 @@ De eerste stappen heb ik tijdens de feedbackmomenten ondervonden en voor de rest
 
 Het naam geven vind ik erg leuk om de gebruiker persoonlijk welkom te heten. Hierdoor wordt het persoonlijker en voor de gebruiker interessanter om te gebruiken. 
 
-![naam](/images/naam.png "naam")
+![naam](opdracht2/images/naam.png "naam")
 
 Wat ik ook erg leuk vind, is dat het na verschillende methodes uit te zoeken toch is gelukt om de favorieten te onderscheiden van "alles" in de lijst. Hierdoor kan de gebruiker filteren door zijn favoriete films.
 
-![favorieten](/images/favorieten.png "favorieten")
+![favorieten](opdracht2/images/favorieten.png "favorieten")
 
 Al met al denk ik dat ik een stap in de goede richting heb gezet, maar weet ik ook dat ik frontend altijd onderschat qua tijd en aandacht. Voor kleine veranderingen heb ik ontzettend veel tijd nodig. Ik vind het lastig maar kan er wel erg van genieten als het eindelijk lukt zoals ik het wil.
 
 Ik vind het erg leuk dat de dark/light modus werkt en dat ik een persoon kan welkomheten als diegene zijn/haar naam invoert. Ook heb ik het responsive gemaakt en dat is iets wat erg belangrijk is, maar ik hiervoor nog erg lastig vond. Ik heb gemerkt dat ik iets goed kan leren door naar ander mans werk te kijken en het zelf naar mijn eigen wens aan te passen. 
 
-![lightmode](/images/pagina.png "lightmode")
-![darkmode](/images/darkpagina.png "darkmode")
+![lightmode](opdracht2/images/pagina.png "lightmode")
+![darkmode](opdracht2/images/darkpagina.png "darkmode")
