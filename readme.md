@@ -35,10 +35,10 @@ Ik ben begonnen met het eerste logo: Nickelodeon. Het lukt me om de letters vanu
 Mijn plan is, als dat probleem verholpen is, om de letters per letter naar het midden te animeren. 
 
 ### Nickelodeon Logo
-![nickelodeon](images/Logo's_FvD_Lalla-01.png) "Nickelodeon logo"
+![nickelodeon](./images/Logo's_FvD_Lalla-01.png) "Nickelodeon logo"
 
 ### Gucci Logo
-![gucci](images/Logo's_FvD_Lalla-02.png) "Gucci logo"
+![gucci](../images/Logo's_FvD_Lalla-02.png) "Gucci logo"
 
 ### Eerste voortgangsgesprek
 - Hoe kan ik meerdere dingen animeren?

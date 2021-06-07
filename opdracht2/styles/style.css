@@ -31,6 +31,25 @@
   
 }
 
+@media (prefers-color-scheme: dark){
+	:root{
+    --backgroundColor: rgb(65, 65, 65);
+    --genreColor: rgb(6, 37, 56);
+    --rozeVlak:#7e0150;
+    --lichtRozeVlak:#ce7aaf;
+    --headerGenres:#f196d0;
+    --shadow: 6px 2px 10px -5px #000000;
+    --whiteColor: rgb(34, 34, 34);
+    --sterKleur:#fcad03;
+    --lichtGelevlak:#ffd57a;
+
+		
+	}
+}
+
+
+
+
 body {
   font-family:eenfont, sans-serif;
   color:var(--genreColor);
@@ -44,6 +63,7 @@ body {
 
 p#gebruikersnaam{
   color: var(--whiteColor);
+  font-size: large;
 }
 
 header{
@@ -61,7 +81,7 @@ header{
 }
 
 header h1{
-  color:white;
+  color:var(--whiteColor);
   font-size: min(6vw,50px);
 }
 
@@ -73,15 +93,15 @@ form {
   top:3px;
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:500px){
   form{
     display:none;
   }
 }
 
 .button {
-  color: headerGenres;
-  background-color:white;
+  color: var(--headerGenres);
+  background-color:var(--whiteColor);
   border-radius: 20px;
   width: 100px;
   box-shadow: var(--shadow);
@@ -164,15 +184,12 @@ ul.geel li:not(.geel) {
   display:none;
 }
 
-
-
-
 li:hover{
   box-shadow: 6px 5px 13px -5px #000000;
 }
 
 li h3{
-  color:rgb(0, 0, 0);
+  color:var(--headerGenres);
 }
 
 li img{
@@ -215,12 +232,3 @@ li.geel{
   background-color: var(--lichtGelevlak);
 }
 
-
-#alles{
-  width: 22px;
-  height: 22px;
-  border-radius: 100px;
-
-  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
-  position: relative;
-}
