@@ -18,57 +18,50 @@
 	
 	<h1>YOUwatch</h1>
 
-			<input type="radio" name="filter" value="alles" id="filter-alles" checked>
-			<label for="filter-alles">Alle films</label>
+        <p id='gebruikersnaam'> </p>
 
-			<input type="radio" name="filter" value="favorieten" id="filter-favorieten">
-			<label for="filter-favorieten">favorieten</label>
+	<form action="verwerk.php" id='naamformulier'>
+		<div>
+			<label for="naam gebruiker">Naam:</label>
+			<input type="text" name='naam' id='naam' value=''>
+			<input class="button" type='submit' name='submit'>
+		</div>
+	</form>
 
+<div>
+		<input type="radio" id="alles" name="films" value="alles">
+		<label for="alles">Alles</label>
+		<input type="radio" id="favoriet" name="films" value="favoriet">
+		<label for="favoriet">Favoriet</label>
+</div>
 	<div class ="genres">
 		<label>
-			<input type="checkbox" checked="checked" id="myScifi" onclick="scifiGenre()"> Sci-Fi
+			<input type="checkbox" checked="checked" id="sci-fi" > Sci-Fi
 			<span class="checkmark"></span>
 		</label>
 		
 		<label>
-			<input type="checkbox" checked="checked"> Comedy
+			<input type="checkbox" checked="checked" id="comedy"> Comedy
 			<span class="checkmark"></span>
 		</label>
 		
 		<label>
-			<input type="checkbox" checked="checked"> Drama
+			<input type="checkbox" checked="checked" id="drama"> Drama
 			<span class="checkmark"></span>
 		</label>
 		
 		<label>
-			<input type="checkbox" checked="checked"> Misdaad
+			<input type="checkbox" checked="checked" id="misdaad" > Misdaad
 			<span class="checkmark"></span>
 		</label>
 
 		<label>
-			<input type="checkbox" checked="checked" id="myHorror" onclick="horrorGenre()"> Horror
+			<input type="checkbox" checked="checked" id="horror" > Horror
 			<span class="checkmark"></span>
 		</label>
 
-		<label>
-			<input type="checkbox" checked="checked"> Documentaires
-			<span class="checkmark"></span>
-		</label>
 
-		<label>
-			<input type="checkbox" checked="checked"> Fantasie
-			<span class="checkmark"></span>
-		</label>
 
-		<label>
-			<input type="checkbox" checked="checked"> Thriller
-			<span class="checkmark"></span>
-		</label>
-
-		<label>
-			<input type="checkbox" checked="checked"> Actie
-			<span class="checkmark"></span>
-		</label>
 	</div>
 
 </header>
@@ -76,75 +69,78 @@
 <main>
 
 
-	<ul class="movielist" >
+	<ul class="movieList" >
 
 		<li class="sci-fi" >
-			<h3>The Hunger Games</h3>
+			<h3 class="name" >The Hunger Games</h3>
 			<a href="#"><img src="./images/hungergames.jpg" alt="hunger games" /></a>
 			<p>
 			Sci-Fi
-			</P>
-			<input class="star"  type="checkbox" checked="none" title="bookmark page">
+			</p>
+			<input class="star" id="star1"  type="checkbox" checked="none" title="bookmark page">
 		</li>
 
-		<li>
-			<h3>Catch Me If You Can</h3>
+		<li class="misdaad" >
+			<h3 class="name" >Catch Me If You Can</h3>
 			<a href="#"><img src="./images/cmiyc.jpeg" alt="catch me if you can" /></a>
 			<p>
 			Misdaad
-			</P>
-			<input class="star"  type="checkbox" checked="none" title="bookmark page">
+			</p>
+			<input class="star" id="star2" type="checkbox" checked="none" title="bookmark page">
 		</li>
 
+
 		<li class="horror" >
-			<h3>The conjuring</h3>
+			<h3 class="name" >The conjuring</h3>
 			<a href="#"><img src="./images/conjuring.jpeg" alt="conjuring" /></a>
 			<p>
 			Horror
 			</P>
-			<input class="star"  type="checkbox" checked="none" title="bookmark page">
+			<input class="star" id="star3" type="checkbox" checked="none" title="bookmark page">
 		</li>
 
 		<li class="sci-fi" >
-			<h3>Godzilla</h3>
+			<h3 class="name" >Godzilla</h3>
 			<a href="#"><img src="./images/godzilla.jpg" alt="godzilla" /></a>
 			<p>
 			Sci-fi
 			</P>
-			<input class="star"  type="checkbox" checked="none" title="bookmark page">
+			<input class="star" id="star4" type="checkbox" checked="none" title="bookmark page">
 		</li>
 
-		<li >
-			<h3>We're the Millers</h3>
+		<li class="comedy">
+			<h3 class="name" >We're the Millers</h3>
 			<a href="#"><img src="./images/millers.jpeg" alt="We're the millers" /></a>
 			<p>
 			Comedy
 			</P>
-			<input class="star"  type="checkbox" checked="none" title="bookmark page">
+			<input class="star" id="star5" type="checkbox" checked="none" title="bookmark page">
 		</li>
 
-		<li >
-			<h3>Titanic</h3>
+		<li class="drama">
+			<h3 class="name" >Titanic</h3>
 			<a href="#"><img src="./images/titanic.jpeg" alt="titanic" /></a>
 			<p>
 			Drama
 			</P>
-			<input class="star"  type="checkbox" checked="none" title="bookmark page">
+			<input class="star"  id="star6" type="checkbox" checked="none" title="bookmark page">
 		</li>
 
 		<li class="sci-fi" >
-			<h3>Zombieland</h3>
+			<h3 class="name" >Zombieland</h3>
 			<a href="#"><img src="./images/zombieland.jpeg" alt="zombieland" /></a>
 			<p>
 			Sci-Fi
 			</P>
-			<input class="star"  type="checkbox" checked="none" title="bookmark page">
+			<input class="star" id="star7" type="checkbox" checked="none" title="bookmark page">
 		</li>
 		
 	</ul>
 
+
 </main>
 	  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>  
 	<script src="scripts/script.js"></script>
 </body>
 	

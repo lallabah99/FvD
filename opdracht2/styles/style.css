@@ -11,28 +11,50 @@
 }
 
 
+
 /* ALGEMENE STYLING */
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
+:root{
+
+  --backgroundColor: rgb(228, 228, 228);
+  --genreColor: rgb(7, 44, 67);
+  --rozeVlak:#f982cd;
+  --lichtRozeVlak:#fbe5f3;
+  --headerGenres:#48002e;
+  --shadow: 6px 2px 10px -5px #000000;
+  --whiteColor: rgb(255, 255, 255);
+  --sterKleur:#fcad03;
+  --lichtGelevlak:#ffd57a;
+  
+}
+
 body {
   font-family:eenfont, sans-serif;
-  color:rgb(7, 44, 67);
-  background-color:rgb(228, 228, 228);
+  color:var(--genreColor);
+  background-color:var(--backgroundColor);
   padding: 1em; 
   margin:0;
   padding:0;
 }
 
+/* header */
+
+p#gebruikersnaam{
+  color: var(--whiteColor);
+}
+
 header{
   width: 100%;
   padding-top:1em;
-  background-color: #f982cd; 
-  position: fixed;
+  background-color: var(--rozeVlak); 
+  position: sticky;
+  top: 0;
   text-align: center;
-  color: #48002e;
-  box-shadow: 6px 2px 10px -5px #000000;
+  color:var(--headerGenres);
+  box-shadow: var(--shadow);
   z-index: 1000;
   
 
@@ -42,6 +64,50 @@ header h1{
   color:white;
   font-size: min(6vw,50px);
 }
+
+/* formulier naam */
+
+form {
+  position: absolute;
+  left:0;
+  top:3px;
+}
+
+@media only screen and (max-width:767px){
+  form{
+    display:none;
+  }
+}
+
+.button {
+  color: headerGenres;
+  background-color:white;
+  border-radius: 20px;
+  width: 100px;
+  box-shadow: var(--shadow);
+  padding: 0.5em;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 1em;
+}
+
+.button:hover {
+  color: white;
+  background-color:rgb(7, 44, 67);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  width: 100px;
+  box-shadow: var(--shadow);
+  padding: 0.5em;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 1em;
+}
+
 
 /* checkboxes */
 .genres {
@@ -66,18 +132,43 @@ ul {
   grid-gap:1.5em;
   grid-template-columns:repeat(auto-fit, minmax(18em, 1fr));
   list-style-type: none;
-  padding-top:20em;
 }
 
 li {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--whiteColor);
   border-radius: 8px;
   text-align: center;
 }
 
+ul.sci-fi li.sci-fi{
+  display: none;
+}
+
+ul.misdaad li.misdaad{
+  display: none;
+}
+
+ul.horror li.horror{
+  display: none;
+}
+
+ul.comedy li.comedy{
+  display: none;
+}
+
+ul.drama li.drama{
+  display: none;
+}
+
+ul.geel li:not(.geel) {
+  display:none;
+}
+
+
+
+
 li:hover{
-  background-color: rgba(255, 255, 255, 0.685);
-  box-shadow: 6px 5px 13px -5px #000000
+  box-shadow: 6px 5px 13px -5px #000000;
 }
 
 li h3{
@@ -107,13 +198,29 @@ li img{
    visibility:visible;
    left:3em;
    bottom:9em;
-   color:#fcad03;
+   color:var(--sterKleur);
    
 }
 .star:checked:before {
    content: "\2606";
    position: absolute;
-   color: #f982cd;
+   color: var(--rozeVlak);
+}
+
+.star input[type=checkbox] {  
+  display: none;
+}
+
+li.geel{
+  background-color: var(--lichtGelevlak);
 }
 
 
+#alles{
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+
+  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+  position: relative;
+}

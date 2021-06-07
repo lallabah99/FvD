@@ -13,6 +13,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. https://www.youtube.com/watch?v=fYq5PXgSsbE
 3. https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
 4. http://jsfiddle.net/binaryben/aLx3m4k5/
+5. https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio
+6. https://www.w3schools.com/tags/att_input_type_radio.asp
+7. https://www.fontsquirrel.com/
 
 
 
@@ -79,4 +82,5 @@ De presentatie verliep goed, ik koos er voor om als eerste te gaan zodat ik tips
 ## Vragen
 - Hoe zorg je dat je content onder de fixed header valt
 - Hoe kan het dat ik alleen de eerste film selecteer en waarom werkt queryselectorall niet?
-- Hoe kan ik iets toevoegen aan favorieten
+- Is er een betere manier om dei sterretjes rechts boven te plaatsen
+- Hoe kan ik iets toevoegen aan favorieten?
