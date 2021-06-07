@@ -37,6 +37,8 @@ Mijn plan is, als dat probleem verholpen is, om de letters per letter naar het m
 ### Nickelodeon Logo
 ![Nickelodeon](/images/Logo's_FvD_Lalla-01.png "Nickelodeon logo")
 
+<img src="images/Logo's_FvD_Lalla-01.png">
+
 ### Gucci Logo
 ![Gucci](/images/Logo's_FvD_Lalla-02.png "Nickelodeon logo")
 
