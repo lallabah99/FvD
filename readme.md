@@ -35,10 +35,10 @@ Ik ben begonnen met het eerste logo: Nickelodeon. Het lukt me om de letters vanu
 Mijn plan is, als dat probleem verholpen is, om de letters per letter naar het midden te animeren. 
 
 ### Nickelodeon Logo
-![nickelodeon](./images/Logo's_FvD_Lalla-01.png) "Nickelodeon logo"
+![Nickelodeon](images/Logo's_FvD_Lalla-01.png "Nickelodeon logo")
 
 ### Gucci Logo
-![gucci](../images/Logo's_FvD_Lalla-02.png) "Gucci logo"
+![Gucci](images/Logo's_FvD_Lalla-02.png "Nickelodeon logo")
 
 ### Eerste voortgangsgesprek
 - Hoe kan ik meerdere dingen animeren?
@@ -78,9 +78,38 @@ De presentatie verliep goed, ik koos er voor om als eerste te gaan zodat ik tips
 2. Het is goed dat ik nth-of-type(2) heb gebruikt, maar het zou handig zijn als ik met commentaar erbij zou zetten over welke letter het gaat zodat ik niet in de war raak.
 3. Bij GUCCI is het eignelijk onnodig dat ik per letter een eigen animatie heb gemaakt waarbij de percentages later scalen. In plaats daarvan had ik gewoon een animation-delay:1s; kunnen gebruiken. 
 
+## Opdracht 2
+
+Bij deze opdracht vond ik de oefeningen van te voren al erg lastig. Daarom had ik een stuk minder motivatie. Ik wist steeds niet waar ik moest beginnen en stelde daarom mijn werk uit. 
+
+Uiteindelijk heb ik ervoor gekozen om de films te kiezen die je kunt filteren. Ik bedacht dat het er zo uit zou moeten zien:
+
+
+![Opdracht 2](images/opdracht2_FvD-01.png "opdracht 2")
+
+Ik was hier wat later mee en kreeg als feedback dat het meer microinteracties kon bevatten en wat uitgebreider mocht. Tijdens het werken aan deze opdracht heb ik daarom wat dingen bedacht die het interessanter zouden maken.
 
 ## Vragen
 - Hoe zorg je dat je content onder de fixed header valt
 - Hoe kan het dat ik alleen de eerste film selecteer en waarom werkt queryselectorall niet?
 - Is er een betere manier om dei sterretjes rechts boven te plaatsen
 - Hoe kan ik iets toevoegen aan favorieten?
+
+Het begin was het aller moeilijkst. Met html en css kan ik meestal wel uitvinden hoe het werkt. Javascript voelt voor mij een stuk minder natuurlijk en hierbij heb ik altijd een voorbeeld nodig. Gelukkig kon ik terugkijken naar de opdrachten van de les. 
+
+De eerste stappen heb ik tijdens de feedbackmomenten ondervonden en voor de rest ben ik zelf aan de slag gegaan met dingen die ik al wist en het combineren van de informatie die ik heb gekregen.
+
+Het naam geven vind ik erg leuk om de gebruiker persoonlijk welkom te heten. Hierdoor wordt het persoonlijker en voor de gebruiker interessanter om te gebruiken. 
+
+![naam](images/naam.png "naam")
+
+Wat ik ook erg leuk vind, is dat het na verschillende methodes uit te zoeken toch is gelukt om de favorieten te onderscheiden van "alles" in de lijst. Hierdoor kan de gebruiker filteren door zijn favoriete films.
+
+![favorieten](images/favorieten.png "favorieten")
+
+Al met al denk ik dat ik een stap in de goede richting heb gezet, maar weet ik ook dat ik frontend altijd onderschat qua tijd en aandacht. Voor kleine veranderingen heb ik ontzettend veel tijd nodig. Ik vind het lastig maar kan er wel erg van genieten als het eindelijk lukt zoals ik het wil.
+
+Ik vind het erg leuk dat de dark/light modus werkt en dat ik een persoon kan welkomheten als diegene zijn/haar naam invoert. Ook heb ik het responsive gemaakt en dat is iets wat erg belangrijk is, maar ik hiervoor nog erg lastig vond. Ik heb gemerkt dat ik iets goed kan leren door naar ander mans werk te kijken en het zelf naar mijn eigen wens aan te passen. 
+
+![lightmode](images/pagina.png "lightmode")
+![darkmode](images/darkpagina.png "darkmode")
