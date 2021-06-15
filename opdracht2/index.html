@@ -16,23 +16,24 @@
 
 <header>
 	
-	<h1>YOUwatch</h1>
+	<h1><a name="top"></a>YOUwatch</h1>
+
 
         <p id='gebruikersnaam'> </p>
 
 	<form action="verwerk.php" id='naamformulier'>
 		<div>
-			<label for="naam gebruiker">Naam:</label>
-			<input type="text" name='naam' id='naam' value=''>
-			<input class="button" type='submit' name='submit'>
+			<label for="naam gebruiker"></label>
+			<input type="text" name='naam' id='naam' value='Gebruikersnaam' onkeyup='saveValue(this);'>
+			<input class="aanmelden" type='submit' name='submit' value="aanmelden">
 		</div>
 	</form>
 
 <div>
-		<input type="radio" id="alles" name="films" value="alles">
+		<input type="radio" id="alles" name="films" value="alles" checked="checked">
 		<label for="alles">Alles</label>
 		<input type="radio" id="favoriet" name="films" value="favoriet">
-		<label for="favoriet">Favoriet</label>
+		<label for="favoriet" id="favorietenLabel" >Favorieten</label>
 </div>
 	<div class ="genres">
 		<label>
@@ -64,6 +65,11 @@
 
 	</div>
 
+	<div class ="randomFilm">
+		<button class="randomButton"> Random </button>
+		<h4 class="resultaat"></h4>
+	</div>
+
 </header>
 
 <main>
@@ -77,7 +83,12 @@
 			<p>
 			Sci-Fi
 			</p>
-			<input class="star" id="star1"  type="checkbox" checked="none" title="bookmark page">
+			
+
+			<input type="checkbox" id="star1" class="star visually-hidden" >
+			<label class="star-label" for="star1"></label>
+
+		</label>
 		</li>
 
 		<li class="misdaad" >
@@ -86,7 +97,10 @@
 			<p>
 			Misdaad
 			</p>
-			<input class="star" id="star2" type="checkbox" checked="none" title="bookmark page">
+
+			<input type="checkbox" id="star2" class="star visually-hidden">
+			<label class="star-label" for="star2"></label>
+
 		</li>
 
 
@@ -96,7 +110,8 @@
 			<p>
 			Horror
 			</P>
-			<input class="star" id="star3" type="checkbox" checked="none" title="bookmark page">
+			<input type="checkbox" id="star3" class="star visually-hidden">
+			<label class="star-label" for="star3"></label>
 		</li>
 
 		<li class="sci-fi" >
@@ -105,7 +120,8 @@
 			<p>
 			Sci-fi
 			</P>
-			<input class="star" id="star4" type="checkbox" checked="none" title="bookmark page">
+			<input type="checkbox" id="star4" class="star visually-hidden">
+			<label class="star-label" for="star4"></label>
 		</li>
 
 		<li class="comedy">
@@ -114,7 +130,8 @@
 			<p>
 			Comedy
 			</P>
-			<input class="star" id="star5" type="checkbox" checked="none" title="bookmark page">
+			<input type="checkbox" id="star5" class="star visually-hidden">
+			<label class="star-label" for="star5"></label>
 		</li>
 
 		<li class="drama">
@@ -123,7 +140,8 @@
 			<p>
 			Drama
 			</P>
-			<input class="star"  id="star6" type="checkbox" checked="none" title="bookmark page">
+			<input type="checkbox" id="star6" class="star visually-hidden">
+			<label class="star-label" for="star6"></label>
 		</li>
 
 		<li class="sci-fi" >
@@ -132,11 +150,67 @@
 			<p>
 			Sci-Fi
 			</P>
-			<input class="star" id="star7" type="checkbox" checked="none" title="bookmark page">
+			<input type="checkbox" id="star7" class="star visually-hidden">
+			<label class="star-label" for="star7"></label>
 		</li>
+
+		<li class="misdaad" >
+			<h3 class="name" >Honest thief</h3>
+			<a href="#"><img src="./images/thief.jpg" alt="Honest thief" /></a>
+			<p>
+			Misdaad
+			</P>
+			<input type="checkbox" id="star8" class="star visually-hidden">
+			<label class="star-label" for="star8"></label>
+		</li>
+
+		<li class="drama" >
+			<h3 class="name" >The terminal</h3>
+			<a href="#"><img src="./images/terminal.jpg" alt="The terminal" /></a>
+			<p>
+			Drama
+			</P>
+			<input type="checkbox" id="star9" class="star visually-hidden">
+			<label class="star-label" for="star9"></label>
+		</li>
+
+		<li class="horror" >
+			<h3 class="name" >It</h3>
+			<a href="#"><img src="./images/it.jpg" alt="It" /></a>
+			<p>
+			Horror
+			</P>
+			<input type="checkbox" id="star10" class="star visually-hidden">
+			<label class="star-label" for="star10"></label>
+		</li>
+
+		<li class="drama" >
+			<h3 class="name" >The Joker</h3>
+			<a href="#"><img src="./images/joker.jpeg" alt="The Joker" /></a>
+			<p>
+			drama
+			</P>
+			<input type="checkbox" id="star11" class="star visually-hidden">
+			<label class="star-label" for="star11"></label>
+		</li>
+
+		<li class="comedy" >
+			<h3 class="name" >The Mask</h3>
+			<a href="#"><img src="./images/mask.jpeg" alt="The Mask" /></a>
+			<p>
+			Comedy
+			</P>
+			<input type="checkbox" id="star12" class="star visually-hidden">
+			<label class="star-label" for="star12"></label>
+		</li>
+		
+
 		
 	</ul>
 
+	<footer class="toTop">
+	<a href="#top"><img src="./images/up.png"/></a>
+</footer>
 
 </main>
 

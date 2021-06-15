@@ -11,7 +11,6 @@
 }
 
 
-
 /* ALGEMENE STYLING */
 *, *::after, *::before {
   box-sizing:border-box;  
@@ -34,14 +33,14 @@
 @media (prefers-color-scheme: dark){
 	:root{
     --backgroundColor: rgb(65, 65, 65);
-    --genreColor: rgb(6, 37, 56);
-    --rozeVlak:#7e0150;
+    --genreColor: rgb(184, 184, 184);
+    --rozeVlak:#99003b;
     --lichtRozeVlak:#ce7aaf;
-    --headerGenres:#f196d0;
-    --shadow: 6px 2px 10px -5px #000000;
-    --whiteColor: rgb(34, 34, 34);
-    --sterKleur:#fcad03;
-    --lichtGelevlak:#ffd57a;
+    --headerGenres:#c3c3c3;
+    --shadow: 6px 2px 10px -5px #181818;
+    --whiteColor: rgb(20, 20, 20);
+    --sterKleur:#9b7524;
+    --lichtGelevlak:#6e5500;
 
 		
 	}
@@ -82,7 +81,7 @@ header{
 
 header h1{
   color:var(--whiteColor);
-  font-size: min(6vw,50px);
+  font-size: min(10vw,40px);
 }
 
 /* formulier naam */
@@ -95,11 +94,57 @@ form {
 
 @media only screen and (max-width:500px){
   form{
-    display:none;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
   }
 }
 
-.button {
+@media only screen and (max-width:500px){
+  header{
+    position: relative;
+    top: 0;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (max-width:500px){
+  h1{
+    margin-top: 12%;
+  }
+}
+
+/* forms */
+
+
+#naam{
+  color:grey;
+}
+
+@keyframes aanmelden-animation {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform:translateY(-1em);
+  }
+  50% {
+    transform:translateY(0em);
+  }
+  70% {
+    transform:translateY(-1em);
+  }
+  100% {
+    transform:translateY(0);
+  }
+}
+
+
+
+.aanmelden {
   color: var(--headerGenres);
   background-color:var(--whiteColor);
   border-radius: 20px;
@@ -113,21 +158,106 @@ form {
   margin: 1em;
 }
 
-.button:hover {
+.aanmelden:hover {
   color: white;
   background-color:rgb(7, 44, 67);
   box-shadow: var(--shadow);
   border-radius: 20px;
   width: 100px;
-  box-shadow: var(--shadow);
   padding: 0.5em;
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
   outline: none;
   margin: 1em;
+  animation-name:aanmelden-animation;
+  animation-duration:1s;
+  transition:ease-in-out;
+  animation-timing-function: linear;
 }
 
+/* random film */
+
+.randomFilm{
+  background-color: var(--whiteColor);
+  padding: 1em;
+}
+
+
+@keyframes dubbelklik-animation {
+  0% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(.8);
+  }
+  45% {
+    transform:scale(1.4);
+  }
+  52% {
+    transform:scale(.8);
+  }
+  57% {
+    transform:scale(1.4);
+  }
+  60% {
+    transform:scale(.8);
+  }
+  80%, 100% {
+    transform:scale(1);
+
+
+  }
+}
+
+.randomButton{
+  box-shadow: var(--shadow);
+	background-color:var(--rozeVlak);
+  border: none;
+  color: var(--whiteColor);
+  padding:1em;
+  border-radius: 20px;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.randomButton:hover {
+  color: white;
+  background-color:var(--sterKleur);
+  cursor: pointer;
+  animation-name:dubbelklik-animation;
+  animation-duration:1s;
+  transition:ease-in-out;
+  animation-timing-function: linear;
+}
+
+
+footer{
+    position: sticky;
+    left: 80%;
+    bottom: 0;
+    width: 3em;
+    background-color:var(--rozeVlak);
+    color: white;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    align-content: center;
+  }
+  
+
+
+.toTop a img{
+  height:3em;
+  width: auto;
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 2500px) {
+  footer{
+  display: none;
+  }
+}
 
 /* checkboxes */
 .genres {
@@ -140,7 +270,6 @@ label{
   margin: 1em;
   
 }
-
 
 /* films */
 
@@ -203,32 +332,44 @@ li img{
 
 /* add to favorites */
 
-.star {
-    visibility:hidden;
-    font-size:30px;
-    cursor:pointer;
-    position:relative;
-}
-.star:before {
-   content: "\2605";
-   position: absolute;
-   visibility:visible;
-   left:3em;
-   bottom:9em;
-   color:var(--sterKleur);
-   
-}
-.star:checked:before {
-   content: "\2606";
-   position: absolute;
-   color: var(--rozeVlak);
-}
-
-.star input[type=checkbox] {  
-  display: none;
-}
 
 li.geel{
   background-color: var(--lichtGelevlak);
 }
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+.star-label::before {
+	content:"\2606";
+	color:var(--rozeVlak);
+
+  position: relative;
+  left:3.5em;
+  bottom:9.3em;
+  font-size:2em;
+
+}
+
+.star:checked + .star-label::before {
+	content:"\2605";
+  color:var(--sterKleur);
+}
+
+
+.star:focus + label::before {
+	color:var(--sterKleur);
+}
+
+
+
+
 

@@ -15,6 +15,30 @@ function geefNaam (event) {
 
 formulier.addEventListener('submit', geefNaam);
 
+// Input value verwijderen 
+
+var text = document.getElementById('naam');
+text.onclick = function() {
+    text.value = '';
+}
+
+// Naam aan favorieten
+
+var formulier = document.querySelector('#naamformulier')
+var favorietenLabel = document.querySelector('#favorietenLabel')
+
+function favorietenNaamGeven (event) {
+    event.preventDefault()
+
+    var naam = formulier.elements['naam'].value ;
+
+    var naamZeggenFavorieten =   naam + "'s "+ ' ' + "favorieten";
+
+    favorietenLabel.textContent = naamZeggenFavorieten ;
+}
+
+formulier.addEventListener('submit', favorietenNaamGeven);
+
 
 //checkboxes
 var scifiCheckbox = document.querySelector("#sci-fi");
@@ -68,7 +92,7 @@ function dramaFilter() {
 } 
 
 
-// favorieten
+//favorieten
 var favorietenCheckbox = document.querySelector("#favoriet");
 
 favorietenCheckbox.addEventListener("click",favorietenFilter); 
@@ -85,82 +109,66 @@ allesCheckbox.addEventListener("change",allesFilter);
 
 function allesFilter() {
     var movieList = document.querySelector("ul.movieList");
-    movieList.classList.remove("geel");    
+    movieList.classList.remove("geel");
 } 
 
-//favorieten
 
-// the hunger games
-var favKnopHunger = document.querySelector('#star1');
-var listElementHunger = document.querySelector('li:nth-child(1)')
 
-favKnopHunger.addEventListener('change', toggleGeelHunger );
+// per list item favorieten (met hulp van Sam Slotemaker)
 
-function toggleGeelHunger() {
-	listElementHunger.classList.toggle('geel');
+var alleFavorietenKnoppen = document.querySelectorAll('.star')
+
+function toggleFavoriet(event) {
+    event.target.parentNode.classList.toggle('geel')
 }
 
-// Catch me if you can
-var favKnopCatch = document.querySelector('#star2');
-var listElementCatch = document.querySelector('li:nth-child(2)')
+alleFavorietenKnoppen.forEach(favoriet => {
+    favoriet.addEventListener('click', toggleFavoriet)
+})
 
-favKnopCatch.addEventListener('change', toggleGeelCatch );
 
-function toggleGeelCatch() {
-	listElementCatch.classList.toggle('geel');
+
+// save value
+
+document.getElementById("naam").value = getSavedValue("naam"); 
+ // input om de value te geven
+
+
+function saveValue(e){
+    var id = e.id;  // id verkrijgen om het naar op te slaan  
+    var val = e.value; // value ophalen 
+    localStorage.setItem(id, val);// overschrijven als er iets nieuws wordt ingevoerd
 }
 
-//the conjuring
-var favKnopCon = document.querySelector('#star3');
-var listElementCon = document.querySelector('li:nth-child(3)')
-
-favKnopCon.addEventListener('change', toggleGeelCon );
-
-function toggleGeelCon() {
-	listElementCon.classList.toggle('geel');
-}
-
-// godzilla
-var favKnopGod = document.querySelector('#star4');
-var listElementGod = document.querySelector('li:nth-child(4)')
-
-favKnopGod.addEventListener('change', toggleGeelGod );
-
-function toggleGeelGod() {
-	listElementGod.classList.toggle('geel');
-}
-
-// millers
-var favKnopMil = document.querySelector('#star5');
-var listElementMil = document.querySelector('li:nth-child(5)')
-
-favKnopMil.addEventListener('change', toggleGeelMil );
-
-function toggleGeelMil() {
-	listElementMil.classList.toggle('geel');
+//de opgeslagen value ophalen
+function getSavedValue  (v){
+    if (!localStorage.getItem(v)) {
+        return "";
+    }
+    return localStorage.getItem(v);
 }
 
 
-// titanic
+// Random film generator
 
-var favKnopTit = document.querySelector('#star6');
-var listElementTit = document.querySelector('li:nth-child(6)')
+let btnRandom = document.querySelector(".randomButton");
+let result = document.querySelector(".resultaat");
 
-favKnopTit.addEventListener('change', toggleGeelTit );
+let users= ['The hunger games','The Conjuring','Godzilla','It','The Joker','The Mask',"We're the Millers",'Honest Thief', 'The Terminal','Titanic','Zombieland'];
 
-function toggleGeelTit() {
-	listElementTit.classList.toggle('geel');
+function getRandomNumber(min, max) {
+
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min;
+    
+    return result
 }
 
-// zombieland
-var favKnopZom = document.querySelector('#star7');
-var listElementZom = document.querySelector('li:nth-child(7)')
+btnRandom.addEventListener('dblclick', () => {
+    let index = getRandomNumber(0, users.length-1);
+    result.innerText = users[index];
 
-favKnopZom.addEventListener('change', toggleGeelZom );
-
-function toggleGeelZom() {
-	listElementZom.classList.toggle('geel');
-}
-
+});
 
 

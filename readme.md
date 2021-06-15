@@ -16,6 +16,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 5. https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio
 6. https://www.w3schools.com/tags/att_input_type_radio.asp
 7. https://www.fontsquirrel.com/
+8. https://stackoverflow.com/questions/38930144/keep-input-value-after-refresh-page
+9. https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
+10. https://www.computerhope.com/issues/ch001475.htm#top
+11. https://stackoverflow.com/questions/44505877/show-and-hide-depend-on-screen-size
+12. Hulp van studentassistent Sam Slotemaker
+13. https://youtu.be/rVcphsUupws 
 
 
 
@@ -113,3 +119,62 @@ Ik vind het erg leuk dat de dark/light modus werkt en dat ik een persoon kan wel
 
 ![lightmode](opdracht2/images/pagina.png "lightmode")
 ![darkmode](opdracht2/images/darkpagina.png "darkmode")
+
+## Herkansing
+
+Ik was bij het eindgesprek te laat met het inleveren. Dit wist ik van te voren, omdat ik de tijd die ik eraan zou besteden nog al had onderschat. Gelukkig mag ik nog gebruik maken van de herkansing en kon ik dit gesprek gebruiken als extra feedbackmoment. De dingen die ik nog wil aanpassen zijn:
+
+1. Toegankelijkheid met het toetsenbord (.visually hidden sterren)
+2. Naam toevoegen aan favorieten
+3. Random movie generator
+4. Naam blijft staan in aanmeldbalk
+5. meer films zonder meer code toe te voegen
+6. Responsive (mobiel)
+7. Animatie (movie generator)
+8. dark mode verbeteren
+
+De studentassistent Sam, gaf aan dat ik in plaats van javascript code per film te gebruiken, ik ook met veel kortere code alle films kon favorieten. Dit is erg gunstig geweest. 
+
+![per film](opdracht2/images/perfilm.png "per film")
+
+Ik kon ook door middel van deze code het double tap idee toepassen. 
+![toevoegen aan favorieten](opdracht2/images/favorietentoevoegen.png "favorieten")
+
+Dit heb ik uiteindelijk toch weg gelaten omdat het mij niet lukte om ook de checkboxes te veranderen van kleur. Dit is jammer, maar het is niet logisch als de ster dan niet gecheckt wordt. 
+
+## Random movie generator
+
+Wat mij leuk leek is om een random movie generator te creeren voor de gebruiker. De gebruiker kan op een button klikken en er wordt een random film uit de lijst gegenereerd. 
+
+Ik bedacht me ook dat het wat lastig is voor de gebruiker om te weten dat je dubbel moet klikken om een random film te genereren. Daarom heb ik ervoor gekozen om een animatie te gebruiken als je over de knop "hovert". Hij krijgt een soort hartslag effect, wat vergelijkbaar is met dubbel klikken. Hierdoor zal de gebruiker eerder weten dat hij/zij moet klikken. 
+
+## Eindreflectie
+
+Na de verbteringen ben ik over het algemeen best blij met mijn werk. Ik besef me wel dat het beter had gekund, maar voor mijn skills heb ik het gevoel dat ik enorm vooruit ben gegaan met het coderen. Ik kan nu namelijk een responsive website creeren, met verschillende events, animaties, dark mode en microinteracties. 
+
+Ook heb ik ervoor kunnen zorgen dat alles met het toetsenbord te bedienen is. Hier had ik eerst namelijk moeite mee, maar ik ben tevreden omdat het nu wel is gelukt. 
+
+Wat ik lastig vond is eigenlijk het beschrijven van bepaalde code en wat het preceis doet. Als ik ergens niet uit kwam wist ik niet goed welke termen ik kon gebruiken om het probleem te googelen bijvoorbeeld. Gelukkig haalde ik ook veel informatie uit de lessen en oefeningen.
+
+Het is me voor de herkansing gelukt om de volgende dingen aan te passen:
+
+1. Toegankelijkheid met het toetsenbord (.visually hidden sterren)
+2. Naam toevoegen aan favorieten
+3. Random movie generator
+4. Naam blijft staan in aanmeldbalk
+5. meer films zonder meer code toe te voegen
+6. Responsive (mobiel)
+7. Animatie (movie generator)
+8. dark mode verbeteren
+
+
+Uiteindelijk ontwerp lightmode:
+
+![lightmodeind1](opdracht2/images/eindontwerplight1.png "lightmodeind1")
+![lightmodeeind2](opdracht2/images/eindontwerplight2.png "lightmodeeind2")
+
+Uiteindelijk ontwerp darkomde:
+
+![darkmodeind1](opdracht2/images/dark1.png "darkmodeind1")
+![darkmodeind2](opdracht2/images/dark2.png "darkmodeind2")
+![darkmodeind2](opdracht2/images/dark3.png "darkmodeind2")
